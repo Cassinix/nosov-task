@@ -4,7 +4,10 @@
   "description": "KPI",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src/",
+    "start": "",
+    "deploy": "",
+    "build": ""
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/Cassinix/nosov-task/issues"
   },
-  "homepage": "https://github.com/Cassinix/nosov-task#readme"
+  "homepage": "https://github.com/Cassinix/nosov-task#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
+  }
 }
