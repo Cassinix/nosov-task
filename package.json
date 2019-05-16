@@ -4,8 +4,8 @@
   "description": "KPI",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src/",
-    "start": "",
+    "lint": "eslint --ignore-path .gitignore .",
+    "start": "node index.js",
     "deploy": "",
     "build": ""
   },
