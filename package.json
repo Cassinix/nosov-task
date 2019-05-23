@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
     "start": "node index.js",
-    "deploy": "now alias --token VP1YqmBHoIBmTxnSskmWP4pY $(now --token VP1YqmBHoIBmTxnSskmWP4pY --name \"nosov-task-$TRAVIS_BRANCH\") \"nosov-task-$TRAVIS_BRANCH\"",
+    "deploy": "now alias --token $ZEITTOKEN $(now --token $ZEITTOKEN --name \"nosov-task-$TRAVIS_BRANCH\") \"nosov-task-$TRAVIS_BRANCH\"",
     "build": ""
   },
   "repository": {
