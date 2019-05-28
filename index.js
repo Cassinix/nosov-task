@@ -1,5 +1,5 @@
 const http = require('http');
-
+/*
 const jsdom = require('jsdom');
 
 const { JSDOM } = jsdom;
@@ -11,6 +11,7 @@ const dom = new JSDOM('', {
 
 const temp = dom.window.document.querySelector('h1');
 console.log(temp);
+*/
 
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
