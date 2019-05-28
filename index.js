@@ -1,7 +1,6 @@
-/* eslint-disable no-trailing-spaces */
 const http = require('http');
 
-
+/*
 const jsdom = require('jsdom');
 
 const { JSDOM } = jsdom;
@@ -13,7 +12,8 @@ const dom = new JSDOM('', {
 
 const temp = dom.window.document.querySelector('h1');
 console.log(temp);
-
+*/
+const temp = 'Hello World';
 
 /*
 https://api.telegram.org/bot844603049:AAHB5bM7onlavJ7blG0Y01hN2GBtmqmYlYU/getWebhookInfo
