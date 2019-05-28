@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "canvas": "^2.5.0",
     "jsdom": "^15.1.1",
     "jsdom-devtools-formatter": "^1.0.0"
   }
