@@ -1,5 +1,8 @@
-function hello() {
-  console.log('Hello Konstantin2!');
-}
+/* eslint-disable prefer-const */
+let http = require('http');
 
-hello();
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.write('Hello World!');
+  res.end();
+}).listen(8080);
