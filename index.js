@@ -10,9 +10,10 @@ const dom = new JSDOM('', {
 });
 
 const temp = dom.window.document.querySelector('h1');
+console.log(temp);
 
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.write(temp);
+  res.write('Hello World!');
   res.end();
 }).listen(8080);
