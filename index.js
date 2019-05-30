@@ -1,4 +1,31 @@
+/* eslint-disable class-methods-use-this */
 const http = require('http');
+
+const Telegram = require('telegram-node-bot');
+
+const { TelegramBaseController } = Telegram;
+const { TextCommand } = Telegram;
+const tg = new Telegram.Telegram('844603049:AAHB5bM7onlavJ7blG0Y01hN2GBtmqmYlYU', {
+  workers: 1,
+});
+
+class PingController extends TelegramBaseController {
+  pingHandler($) {
+    $.sendMessage('pong');
+  }
+
+  get routes() {
+    return {
+      pingCommand: 'pingHandler',
+    };
+  }
+}
+
+tg.router
+  .when(
+    new TextCommand('ping', 'pingCommand'),
+    new PingController(),
+  );
 
 /*
 const jsdom = require('jsdom');
@@ -13,7 +40,6 @@ const dom = new JSDOM('', {
 const temp = dom.window.document.querySelector('h1');
 console.log(temp);
 */
-const temp = 'Hello World';
 
 /*
 https://api.telegram.org/bot844603049:AAHB5bM7onlavJ7blG0Y01hN2GBtmqmYlYU/getWebhookInfo
@@ -21,6 +47,6 @@ https://api.telegram.org/bot844603049:AAHB5bM7onlavJ7blG0Y01hN2GBtmqmYlYU/getWeb
 
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.write(temp);
+  res.write('Hello World');
   res.end();
 }).listen(8080);

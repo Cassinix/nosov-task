@@ -23,12 +23,12 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.2",
-    "now": "^15.3.0",
-    "telegram-node-bot": "^4.0.5"
+    "now": "^15.3.0"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "jsdom": "^15.1.1",
-    "jsdom-devtools-formatter": "^1.0.0"
+    "jsdom-devtools-formatter": "^1.0.0",
+    "telegram-node-bot": "^4.0.5"
   }
 }
